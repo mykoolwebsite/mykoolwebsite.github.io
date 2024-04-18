@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cool Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/98.css/2.4.0/98.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            background-image: url('cats-background.jpg');
+            background-image: url('cats-background.jpg'); /* Replace 'cats-background.jpg' with your actual image URL */
             background-size: cover;
-            background-position: center;
-            color: #000; /* Set text color to black */
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
+            color: #000;
+            font-family: Arial, sans-serif;
             padding: 20px;
-            background-color: #fff; /* White background for the box */
-            border: 1px solid #000; /* Black border */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
         }
-        h1 {
-            font-size: 3em;
+
+        .title {
             text-align: center;
-            margin-top: 100px; /* Adjust spacing from top */
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .content-box {
+            background-color: #fff;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 8px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
+
 <body>
     <div class="container">
-        <h1>My Cool Website</h1>
-        <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan tincidunt tortor, vel suscipit quam lobortis eget. Nulla facilisi. Vivamus in eros eu enim faucibus suscipit. Aliquam erat volutpat.</p>
-            <p>Integer et felis id justo lobortis mollis. Vestibulum condimentum, libero et ultrices tincidunt, nisl justo fringilla ligula, non eleifend lorem purus vel libero. Fusce et mi nec odio vehicula vestibulum.</p>
-            <p>Nullam nec risus euismod, placerat enim sed, convallis turpis. Suspendisse potenti. In vel aliquet velit, vel mattis ex. Fusce at justo sed libero suscipit malesuada. Suspendisse potenti.</p>
+        <div class="title">
+            My Cool Website
+        </div>
+        <div class="content-box">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
     </div>
 </body>
+
 </html>

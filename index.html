@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<title>My Cool Website</title>
+	<link rel="icon" type="image/x-icon" href="icon.png">
 	<style>
 		body {
 			background-image: url('cats-background.jpg');
 			background-size: cover;
 			background-position: center;
-			color: #000;
+			color: black;
 			font-family: Arial, sans-serif;
 			padding: 20px;
 			margin: 0;
@@ -18,7 +19,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			align-items: center;
+			align-items: center; 
 		}
 		.title {
 			font-size: 36px;
@@ -35,7 +36,7 @@
 	}
 	.custom-text {
 			font-size: 24px;
-			color: #000;
+			color: #ff2d00;
 	}
 	</style>
 </head>
@@ -44,15 +45,11 @@
 		<div class="title">
 			<img src="mycoolwebsite.gif" alt="My Cool Website">
 		</div>
-		<div class="window">
+		<div class="window" style="margin:10;">
 			<div class="title-bar">
-				<span>
-					<div class="icon" style='width:16px;height:16px;line-height:16px;background-image:url("icon.png");background-size:16px;'>
-					</div>
-					<span class="title-bar-text">
-						Welcome
-					</span>
-				</span>
+				<div class="title-bar-text">
+					Welcome! Welcome! Welcome! Welcome! Welcome! Welcome!
+				</div>
 				<div class="title-bar-controls">
 					<button aria-label="Minimize"></button>
 					<button aria-label="Maximize"></button>
@@ -60,7 +57,26 @@
 				</div>
 			</div>
 			<div class="window-body custom-text">
-				<p>Welcome to the home of epic</p>
+				<p>Welcome to the home of epic!!!!</p>
+				<section class="field-row" style="justify-content: flex-end">
+					<button>Hi!</button>
+					<button>I like clicking buttons</button>
+				</section>
+			</div>
+		</div>
+		<div class="window" style="width:800;float:left;">
+			<div class="title-bar">
+				<div class="title-bar-text">
+					certified random cool video
+				</div>
+				<div class="title-bar-controls">
+					<button aria-label="Minimize"></button>
+					<button aria-label="Maximize"></button>
+					<button aria-label="Close"></button>
+				</div>
+			</div>
+			<div class="window-body">
+				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XC3epqRsaO0?si=hGpj9_ySzrJGKuM-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>

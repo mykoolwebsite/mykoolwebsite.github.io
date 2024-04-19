@@ -48,10 +48,30 @@
 			font-size: 82px;
 			color: #000000;
 	}
+	.mobile-box {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+	}
+	@media only screen and (max-width: 768px) {
+	.mobile-box {
+        display: block;
+	}
+	}
 	</style>
 </head>
 <body>
-	<img src="markiplier-cry.gif" alt="Live Reaction" style="position:fixed;top:0;left:0;z-index:999;width:400px;height:300px;">
+	<div id="mobileBox" class="mobile-box">
+		<p>This website dosent work on mobile, change to computer view</p>
+		<p>or dont, idc, also tap the center of the screen for a surprise</p>
+	</div>
+	<img src="markiplier-cry.gif" alt="Live Reaction" style="position:fixed;top:0;left:0;z-index:998;width:400px;height:300px;">
 	<div class="godsmiteme">
 		<div class="title">
 			<img src="mycoolwebsite.gif" alt="My Cool Website" style="width:800px;">
@@ -175,6 +195,7 @@
 			</div>
 		</div>
 	</div>
+    <script src="mobile.js"></script>
 	<script src="./oneko.js"></script>
 </body>
 </html>

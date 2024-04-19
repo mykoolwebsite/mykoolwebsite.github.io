@@ -36,16 +36,25 @@
 	}
 	.custom-text {
 			font-size: 24px;
-			color: #ff2d00;
+			color: #000000;
+	}
+	.medium-ass-text {
+		font-size: 48px;
+		color:  #000000;
+	}
+	.big-ass-text {
+			font-size: 82px;
+			color: #000000;
 	}
 	</style>
 </head>
 <body>
+	<img src="markiplier-cry.gif" alt="Live Reaction" style="position:fixed;top:0;left:0;z-index:999;width:400px;height:300px;">
 	<div class="godsmiteme">
 		<div class="title">
-			<img src="mycoolwebsite.gif" alt="My Cool Website">
+			<img src="mycoolwebsite.gif" alt="My Cool Website" style="width:800px;">
 		</div>
-		<div class="window" style="margin:10;">
+		<div class="window" style="margin:25px;">
 			<div class="title-bar">
 				<div class="title-bar-text">
 					Welcome! Welcome! Welcome! Welcome! Welcome! Welcome!
@@ -64,19 +73,103 @@
 				</section>
 			</div>
 		</div>
-		<div class="window" style="width:800;float:left;">
+		<span style="display:flex;align-items:center;">
+			<div class="window" style="margin-bottom:25px; transform: translateX(-10%);">
+				<div class="title-bar">
+					<div class="title-bar-text">
+						certified random cool video
+					</div>
+					<div class="title-bar-controls">
+						<button aria-label="Minimize"></button>
+						<button aria-label="Maximize"></button>
+						<button aria-label="Close"></button>
+					</div>
+				</div>
+				<div class="window-body">
+					<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XC3epqRsaO0?si=hGpj9_ySzrJGKuM-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="window" style="margin-bottom:25px; transform: translateX(10%); width:560px;">
+				<div class="title-bar">
+					<div class="title-bar-text">
+						Click to insert text!
+					</div>
+					<div class="title-bar-controls">
+						<button aria-label="Minimize"></button>
+						<button aria-label="Maximize"></button>
+						<button aria-label="Close"></button>
+					</div>
+				</div>
+				<div class="window-body">
+					<p>This is my first attempt at making a website, no, i don't think i couldve done better, if you have any ideas of cool things to add to the site please fill the form down below together with the necessary information</p>
+					<div class="field-row-stacked" style="width: 500px">
+						<label for="text20">Your Idea</label>
+						<textarea id="text20" rows="8"></textarea>
+					</div>
+					<div class="field-row">
+						<label for="text17">Full Legal Name</label>
+ 						<input id="text17" type="text" />
+					</div>
+					<div class="field-row-stacked" style="width: 500px">
+						<label for="text18">Address (Line 1)</label>
+						<input id="text18" type="text" />
+					</div>
+					<div class="field-row-stacked" style="width: 500px">
+						<label for="text19">Address (Line 2)</label>
+						<input id="text19" type="text" />
+					</div>
+					<div class="field-row-stacked" style="width: 200px">
+						<label for="text24">Set This To The Number 1337</label>
+						<input id="text24" type="number" value="1"/>
+					</div>
+					<section class="field-row" style="justify-content: flex-end">
+						<button onclick="changeText()" id="myButton">Send!</button>
+						<script>
+						function changeText() {
+							const button = document.getElementById("myButton");
+							button.innerHTML = "Sent!";
+							button.disabled = true;
+						}
+						</script>
+				</div>
+			</div>
+		</span>
+		<div class="window" style="margin-bottom:25px;">
 			<div class="title-bar">
 				<div class="title-bar-text">
-					certified random cool video
+					Links
 				</div>
 				<div class="title-bar-controls">
 					<button aria-label="Minimize"></button>
 					<button aria-label="Maximize"></button>
 					<button aria-label="Close"></button>
+					<button aria-label="Maximize"></button>
+					<button aria-label="Minimize"></button>
+					<button aria-label="Close"></button>
 				</div>
 			</div>
-			<div class="window-body">
-				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XC3epqRsaO0?si=hGpj9_ySzrJGKuM-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			<div class="window-body big-ass-text">
+				<img src="socials.gif" alt="My Socials" style="display:block;margin:0 auto;width:700px;height:200;">
+				<a href="https://google.com" style="display:flex;align-items:center;">
+					<img src="Logo_of_YouTube_(2005-2006).svg.png" alt="My Youtube" style="width:400px;height:200px;margin:25px;">
+					<span> ← My youtube</span>
+				</a>
+				<p class="medium-ass-text">I post cool videos there!</p>
+				<a href="https://google.com" style="display:flex;align-items:center;">
+					<img src="Twitter_logo_(2006-2012).png" alt="My Youtube" style="width:400px;height:200px;margin:25px;">
+					<span> ← My twitter</span>
+				</a>
+				<p class="medium-ass-text">at the time of writing this, its a empty page and idk what to put there, but i will figure something out</p>
+			</div>
+		</div>
+		<div class="window" style="margin-bottom:25px;">
+			<div class="title-bar">
+				<div class="title-bar-text">
+					Donate
+				</div>
+				<a href="https://google.com">
+					<img src="reoreo.png" alt="Begging for moeny">
+				</a>
 			</div>
 		</div>
 	</div>
